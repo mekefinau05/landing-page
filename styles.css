@@ -11,7 +11,7 @@ body {
 
 #service img {
   width: 8vw;
-  height: 8vh;
+  height: 10vh;
 }
 
 #contact {
@@ -43,7 +43,7 @@ body {
 }
 
 h1 {
-  font-size: 3vw;
+  font-size: 2.5vw;
 }
 
 #integrate {
@@ -52,29 +52,37 @@ h1 {
 
 p {
   font-size: 1.4vw;
+  width: 30vw;
 }
 
 /* MIDDLE */
-#main {
+.main {
   max-width: 100%;
   height: 40vh;
   display: flex;
   flex-direction: row-reverse;
-  /* justify-content: space-between; */
-  margin: 4vh 4vw;
+  margin: 2vh 4vw;
+}
+
+#two {
+  padding-top: 8vw;
+  padding-bottom: 6vw;
 }
 
 .tools {
   width: 100vw;
-  /* height: 30vh; */
-  /* padding: 2vw; */
-  justify-content: space-between;
+  padding: 4vw;
 }
 
-.image {
-  width: 34vw;
-  height: 34vh;
-  /* justify-content: space-between; */
+#ebq {
+  width: 38vw;
+  height: 36vh;
+  margin-left: 4vw;
+}
+
+#emp {
+  width: 26vw;
+  height: 26vh;
 }
 
 /* FOOTER */
@@ -83,11 +91,10 @@ p {
   color: white;
   margin-top: 8vh;
   padding: 4vh 6vw;
-}
-
-.footer h1 {
+  display: flex;
+  flex-direction: column;
   justify-content: center;
-  background-color: aqua;
+  align-items: center;
 }
 
 #contactUs {
@@ -97,7 +104,86 @@ p {
   border-radius: 50px;
   font-size: x-small;
   padding: 1vh 2vw;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+}
+
+/* ********************* */
+/*        MOBILE         */
+/* ********************* */
+@media only screen and (max-width: 600px) {
+  main {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  #service {
+    width: 80vw;
+    height: 55vh;
+    padding: 1.5vh 6vw;
+  }
+
+  p {
+    width: 64vw;
+    font-size: 4vw;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+
+  h1 {
+    width: 55vw;
+    font-size: 6vw;
+    text-align: center;
+  }
+
+  #marketing {
+    display: flex;
+    flex-flow: column;
+    white-space: normal;
+  }
+
+  #top img {
+    width: 20vw;
+    height: 14vh;
+  }
+
+  /****** MAIN *****/
+  .main {
+    width: 80vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  #ebq {
+    width: 80vw;
+  }
+
+  #emp {
+    width: 60vw;
+  }
+
+  /* FOOTER */
+  .footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .footer h1 {
+    width: 80vw;
+    flex-wrap: wrap;
+  }
+
+  #contactUs {
+    color: blue;
+    background-color: gold;
+    border: none;
+    border-radius: 50px;
+    font-size: x-small;
+    padding: 1vh 4vw;
+    justify-content: center;
+  }
 }
