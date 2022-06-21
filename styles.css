@@ -157,7 +157,7 @@ p {
   }
 
   #ebq {
-    width: 80vw;
+    width: 70vw;
   }
 
   #emp {
@@ -170,11 +170,11 @@ p {
     flex-direction: column;
     justify-content: center;
     text-align: center;
+    padding: 10vh 1vw;
   }
 
   .footer h1 {
-    width: 80vw;
-    flex-wrap: wrap;
+    width: 45vw;
   }
 
   #contactUs {
