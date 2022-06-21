@@ -40,15 +40,18 @@ body {
 
 #title h1 {
   line-height: 0.2;
-  font-size: xx-large;
+}
+
+h1 {
+  font-size: 3vw;
 }
 
 #integrate {
-  font-weight: 200;
+  font-weight: 100;
 }
 
 p {
-  font-size: 1.65vh;
+  font-size: 1.4vw;
 }
 
 /* MIDDLE */
@@ -57,19 +60,21 @@ p {
   height: 40vh;
   display: flex;
   flex-direction: row-reverse;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   margin: 4vh 4vw;
 }
 
 .tools {
-  width: 40vw;
-  height: 30vh;
-  padding: 4vh 4vw;
+  width: 100vw;
+  /* height: 30vh; */
+  /* padding: 2vw; */
+  justify-content: space-between;
 }
 
 .image {
   width: 34vw;
-  height: 36vh;
+  height: 34vh;
+  /* justify-content: space-between; */
 }
 
 /* FOOTER */
@@ -77,7 +82,12 @@ p {
   background-color: rgba(31, 31, 192, 0.827);
   color: white;
   margin-top: 8vh;
-  padding: 8vh 10vw;
+  padding: 4vh 6vw;
+}
+
+.footer h1 {
+  justify-content: center;
+  background-color: aqua;
 }
 
 #contactUs {
@@ -87,5 +97,7 @@ p {
   border-radius: 50px;
   font-size: x-small;
   padding: 1vh 2vw;
+  display: flex;
+  justify-content: center;
   align-items: center;
 }
